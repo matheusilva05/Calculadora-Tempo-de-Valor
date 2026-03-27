@@ -1,67 +1,145 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #a57ee4, #2600fe);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.938);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e5e7eb;
+}
+
+
+/* CARD */
 .container {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    width: 300px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 35px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     text-align: center;
 }
 
+/* TÍTULO */
 h1 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
+strong {
+    color: #4facfe;
+}
+
+/* LABEL */
 label {
     display: block;
     text-align: left;
-    margin-top: 10px;
-    font-weight: bold;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cbd5f5;
 }
 
+/* INPUT */
 input {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
     outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #9ca3af;
 }
 
 input:focus {
-    border-color: #4facfe;
+    border: 1px solid #4facfe;
+    box-shadow: 0 0 8px rgba(79,172,254,0.5);
 }
 
+/* BOTÃO */
 button {
     width: 100%;
-    margin-top: 20px;
-    padding: 12px;
+    margin-top: 25px;
+    padding: 14px;
     border: none;
-    border-radius: 10px;
-    background: #4facfe;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
     color: white;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    background: #3a8de0;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    background-color: aliceblue;
 }
 
 #resultado {
     margin-top: 20px;
     font-weight: bold;
-    color: #333;
+    color: #e5e7eb;
+}
+
+/* FOOTER */
+section {
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    background-color: black;
+    padding: 22px 0;
+
+    display: flex;
+    justify-content: center;
+}
+section ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+section li {
+    color: #aaa;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section li:hover {
+    color: #4facfe;
+}
+
+main{
+    margin-top: 120px;
+    background-color: #151616;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main p{
+    margin: 10em 10em;
+    width: 370px;
+}
+.titulo-destaque {
+    font-size: 39px;
+}
+
+.imagem-main {
+    height: 300px;
+    margin: 75px;
 }
